@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void gerarSubconjuntos(int arr[], int n, int indice, int subconjunto[], int k) {
-    if (indice == n) {  // Caso base: quando todos os elementos foram processados
+    if (indice == n) {  
         printf("{");
         for (int i = 0; i < k; i++) {
             printf("%d", subconjunto[i]);
