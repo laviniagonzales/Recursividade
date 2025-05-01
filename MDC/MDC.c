@@ -2,8 +2,8 @@
 
 int mdc(int a, int b) {
     if (b == 0)
-        return a;  // Quando b chega a 0, 'a' é o MDC
-    return mdc(b, a % b);  // Chamada recursiva
+        return a;  
+    return mdc(b, a % b);  
 }
 
 int main() {
