@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int verificarPrimo(int n, int divisor) {
-    if (n <= 1)  // Caso base: números menores ou iguais a 1 não são primos
+    if (n <= 1)  
         return 0;
-    if (divisor == 1)  // Caso base: se o divisor chegou a 1, é primo
+    if (divisor == 1)  
         return 1;
-    if (n % divisor == 0)  // Se o número for divisível por algum divisor, não é primo
+    if (n % divisor == 0)  
         return 0;
-    return verificarPrimo(n, divisor - 1);  // Chamada recursiva com divisor decrementado
+    return verificarPrimo(n, divisor - 1);  
 }
 
 int main() {
