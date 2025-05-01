@@ -2,15 +2,15 @@
 #include <string.h>
 
 int contarCaracteres(char *str, int index) {
-    if (str[index] == '\0')  // Caso base: quando encontrar o final da string
+    if (str[index] == '\0') 
         return 0;
-    return 1 + contarCaracteres(str, index + 1);  // Contagem recursiva
+    return 1 + contarCaracteres(str, index + 1);  
 }
 
 int main() {
     char texto[100];
     printf("Digite uma string: ");
-    scanf("%s", texto);  // Lê uma palavra sem espaços
+    scanf("%s", texto);  
 
     printf("O número de caracteres na string '%s' é: %d\n", texto, contarCaracteres(texto, 0));
 
